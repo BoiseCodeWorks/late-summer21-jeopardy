@@ -1,5 +1,6 @@
 @import "./_variables.scss";
 @import "../../node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap');
 @import "./_overrides.scss";
 @import "./custom.scss";
 @import "./loaders.scss";
@@ -15,5 +16,12 @@ main {
   flex-grow: 1;
 }
 
+.title-font {
+  font-family: 'Zen Tokyo Zoo', cursive;
+}
+
+.text-xl {
+  font-size: 4rem;
+}
 
 

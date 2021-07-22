@@ -1,7 +1,8 @@
-import ValuesController from "./Controllers/ValuesController.js";
+import JeopardyController from "./Controllers/JeopardyController.js";
+
 
 class App {
-  valuesController = new ValuesController();
+  jeopardyController = new JeopardyController
 }
 
 window["app"] = new App();
