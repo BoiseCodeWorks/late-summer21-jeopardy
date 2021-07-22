@@ -18,8 +18,24 @@
             <h1 class="ml-2 text-xl title-font text-center">Jeopardy</h1>
         </nav>
     </header>
-    <main class="container">
-        <div id="app"></div>
+    <main class="container-fluid">
+        <div class="row bg-gray lighten-40 p-2">
+            <div class="col">
+                <div class="form-group d-flex">
+                    <label for="player-name">Name</label>
+                    <select class="form-control ml-3" name="player-name" id="player-name">
+                        <option>Mark</option>
+                        <option>Jake</option>
+                        <option>AutoPilot</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col">
+                <p>Score: <span id="score">19200</span></p>
+            </div>
+        </div>
+        <div class="row" id="question">
+        </div>
     </main>
     <footer class="bg-dark text-light">
         <div class="text-center">
