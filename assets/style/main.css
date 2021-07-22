@@ -10704,4 +10704,12 @@ main {
   font-size: 4rem;
 }
 
+.question:hover .answer {
+  opacity: 1;
+}
+.question .answer {
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+
 /*# sourceMappingURL=main.css.map */

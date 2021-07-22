@@ -25,3 +25,14 @@ main {
 }
 
 
+.question {
+  &:hover{
+    .answer {
+      opacity: 1;
+    }
+  }
+  .answer {
+    opacity: 0;
+    transition: all .3s linear
+  }
+}

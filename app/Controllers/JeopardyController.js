@@ -9,8 +9,7 @@ function _draw() {
 export default class JeopardyController {
   constructor() {
     ProxyState.on('activeQuestion', _draw)
-
-    this.getNewQuestion()
+    ProxyState.on('activePlayer', this.getNewQuestion)
   }
   async getNewQuestion() {
     try {

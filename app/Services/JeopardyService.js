@@ -5,7 +5,8 @@ import { jeopardyApi } from "./AxiosService.js";
 class JeopardyService {
   async getNewQuestion() {
     const res = await jeopardyApi.get()
-    if (!res.data[0].question) {
+    if (!res.data[0].question || !res.data[0].value) {
+      // NOTE when the request fails use recursion to get a new one
       this.getNewQuestion()
       return
     }

@@ -20,18 +20,20 @@
     </header>
     <main class="container-fluid">
         <div class="row bg-gray lighten-40 p-2">
-            <div class="col">
+            <div class="col text-center">
                 <div class="form-group d-flex">
                     <label for="player-name">Name</label>
-                    <select class="form-control ml-3" name="player-name" id="player-name">
-                        <option>Mark</option>
-                        <option>Jake</option>
-                        <option>AutoPilot</option>
+                    <select onchange="app.playersController.setActivePlayer(event)" class="form-control ml-3"
+                        name="player-name" id="player-name">
                     </select>
                 </div>
             </div>
-            <div class="col">
-                <p>Score: <span id="score">19200</span></p>
+            <div class="col text-center">
+                <p>Score: <span id="score">0</span></p>
+            </div>
+            <div class="col text-center">
+                <button type="button" class="btn btn-primary" onclick="app.playersController.addPlayer()">Add
+                    Player</button>
             </div>
         </div>
         <div class="row" id="question">
@@ -45,6 +47,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
         integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script src="app/main.js" type="module"></script>
 </body>
 

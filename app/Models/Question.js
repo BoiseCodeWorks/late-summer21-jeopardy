@@ -13,7 +13,7 @@ export default class Question {
         <h4 class="text-uppercase">Category: ${this.category}</h4>
         <h4>Value: ${this.value}</h4>
     </div>
-    <div class="text-center m-5">
+    <div class="text-center m-5 question">
         <h3>${this.question}</h3>
         <div class="answer">
             <p>${this.answer}</p>
@@ -21,8 +21,8 @@ export default class Question {
     </div>
     </div>
     <div class="col-12 d-flex justify-content-around flex-grow-1 mt-5">
-        <button class="btn btn-success">Correct</button>
-        <button class="btn btn-danger">Incorrect</button>
+        <button class="btn btn-success" onclick='app.playersController.givePoints(${this.value})'>Correct</button>
+        <button class="btn btn-danger" onclick='app.playersController.givePoints(-${this.value})'>Incorrect</button>
     </div>
     
     
